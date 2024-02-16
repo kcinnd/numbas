@@ -15,7 +15,7 @@ body, html {
 #number {
     font-size: 250px; /* Large size for visibility */
     font-weight: bold;
-    color: #800080; /* Purple color */
+    color: #6a0dad; /* Adjusted to a deeper purple color */
     cursor: pointer; /* Indicate the element is clickable */
     opacity: 0;
     transform: scale(0) rotate(-360deg); /* Start smaller and rotated for a spin effect */
@@ -26,12 +26,12 @@ body, html {
     0% {
         opacity: 0;
         filter: blur(12px);
-        text-shadow: 0 0 5px #800080;
+        text-shadow: 0 0 5px #6a0dad; /* Deeper purple glow */
     }
     30% {
         transform: scale(1.2) rotate(360deg); /* Overshoot and rotate for added dynamism */
         filter: blur(8px);
-        text-shadow: 0 0 10px #800080, 0 0 20px #800080;
+        text-shadow: 0 0 10px #6a0dad, 0 0 20px #6a0dad; /* Enhanced purple glow */
     }
     60% {
         transform: scale(0.8) rotate(-360deg); /* Shrink back and rotate the opposite direction */
@@ -41,15 +41,15 @@ body, html {
         opacity: 1;
         transform: scale(1) rotate(0deg); /* Return to normal size and orientation */
         filter: blur(0);
-        text-shadow: 0 0 15px #800080, 0 0 30px #800080, 0 0 45px #800080; /* Strong purple glow for a magical finish */
+        text-shadow: 0 0 15px #6a0dad, 0 0 30px #6a0dad, 0 0 45px #6a0dad; /* Strong purple glow for a magical finish */
     }
 }
 
 @keyframes twinkle {
     0%, 100% {
-        text-shadow: 0 0 15px #800080, 0 0 30px #800080, 0 0 45px #800080;
+        text-shadow: 0 0 15px #6a0dad, 0 0 30px #6a0dad, 0 0 45px #6a0dad;
     }
     50% {
-        text-shadow: 0 0 25px #800080, 0 0 50px #800080, 0 0 75px #800080; /* Brighter and larger glow for a twinkle effect */
+        text-shadow: 0 0 25px #6a0dad, 0 0 50px #6a0dad, 0 0 75px #6a0dad; /* Brighter and larger glow for a twinkle effect */
     }
 }
